@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Traditional Foods"
+        android:id="@+id/foods"
+        android:icon="@drawable/baseline_food_bank_24"/>
+    <item
+        android:title="Traditional Drinks"
+        android:id="@+id/drinks"
+        android:icon="@drawable/baseline_coffee_24"/>
+    <item
+        android:title="Favorites"
+        android:id="@+id/favorites"
+        android:icon="@drawable/baseline_thumb_up_24"/>
+
+</menu>
