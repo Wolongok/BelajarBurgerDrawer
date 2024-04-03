@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.burgerdrawerfoodlist.Model;
@@ -29,6 +30,9 @@ public class FoodsFragment extends Fragment implements FoodsAdapter.ItemClickLis
     FoodsAdapter adapter;
 
 
+
+
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -38,9 +42,16 @@ public class FoodsFragment extends Fragment implements FoodsAdapter.ItemClickLis
         // Required empty public constructor
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_foods, container, false);
+
+
+
+
+
         // Inflate the layout for this fragment
         modelFoods.add(new Model("Soto Kudus", "https://o-cdn-cas.sirclocdn.com/parenting/images/makanan-khas-kudus.width-800.format-webp.webp"));
         modelFoods.add(new Model("Lentog Tanjung", "https://o-cdn-cas.sirclocdn.com/parenting/images/Lentog_Tanjung.width-800.format-webp.webp"));
@@ -49,7 +60,7 @@ public class FoodsFragment extends Fragment implements FoodsAdapter.ItemClickLis
         modelFoods.add(new Model("Pecel Pakis", "https://o-cdn-cas.sirclocdn.com/parenting/images/Pecel_Pakis_Colo.width-800.format-webp.webp"));
         modelFoods.add(new Model("Nasi Pindang", "https://o-cdn-cas.sirclocdn.com/parenting/images/Nasi_Pindang_Kudus.width-800.format-webp.webp"));
 
-        View view = inflater.inflate(R.layout.fragment_foods, container, false);
+
 
         RecyclerView recyclerView = view.findViewById(R.id.rvFoods);
 
@@ -61,7 +72,13 @@ public class FoodsFragment extends Fragment implements FoodsAdapter.ItemClickLis
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
         return view;
+
+
+
     }
+
+
+
 
     @Override
     public void onItemClick(View view, int position) {

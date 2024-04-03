@@ -5,5 +5,10 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="RobotoBoldTextAppearance">
+        <item name="android:fontFamily">@font/quicksand_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="Theme.BurgerDrawerFoodList" parent="Base.Theme.BurgerDrawerFoodList" />
 </resources>

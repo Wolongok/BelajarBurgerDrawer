@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
         showHomePage();
 
+        toolbar.setTitleTextAppearance(this,R.style.RobotoBoldTextAppearance);
+
         drawerLayout = findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
