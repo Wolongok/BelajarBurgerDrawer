@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Window window = getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        int statusBarColor = Color.parseColor("#e7ebe4");
+        int statusBarColor = Color.parseColor("#ECE8D9");
         getWindow().setStatusBarColor(statusBarColor);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -53,11 +53,14 @@ public class MainActivity extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
 
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
+
         drawerLayout.addDrawerListener(toggle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

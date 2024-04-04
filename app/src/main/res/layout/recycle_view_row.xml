@@ -7,7 +7,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:backgroundTint="#e7ebe4"
+        android:backgroundTint="#FAF6E9"
         android:id="@+id/row"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="-65dp"
+                android:layout_marginTop="-10dp"
                 android:fontFamily="@font/quicksand_light"
                 android:text="Rumus"
                 android:textSize="21dp"

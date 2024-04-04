@@ -15,9 +15,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#e7ebe4"
-
-            />
+            android:background="#494949"
+            style="@style/MyTheme"
+            app:subtitleTextColor="#FFFFFF"
+            app:titleTextColor="#FFFFFF" />
 
         <!-- FrameLayout where fragments or layouts will be placed -->
         <FrameLayout

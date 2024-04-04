@@ -1,14 +1,26 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
     <style name="Base.Theme.BurgerDrawerFoodList" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+
+
     <style name="RobotoBoldTextAppearance">
         <item name="android:fontFamily">@font/quicksand_light</item>
         <item name="android:textStyle">bold</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
     </style>
+
+
+
+
+
+
+
 
     <style name="Theme.BurgerDrawerFoodList" parent="Base.Theme.BurgerDrawerFoodList" />
 </resources>
+
